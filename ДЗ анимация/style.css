@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+/*-----------------------------------------menu------------------------------------*/
+a:hover{
+    cursor: pointer;
+}
+.container{
+    margin: 20px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+nav.menu>a{
+    color: rgba(76, 76, 76, 0.78);
+    background-color: transparent;
+    width: 200px;
+    padding: 20px;
+    font-family: 'Josefin Slab', Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+nav.menu:hover>a{
+    filter: blur(1px);
+    transition: all 1s linear;
+}
+nav.menu>a:hover{
+    color: white;
+    filter: blur(0);
+    transform: scale(2);
+    transition: all 0.7s linear;
+    font-weight: lighter;
+}
+/*-----------------------------------------end menu------------------------------------*/
+/*-----------------------------------------circle------------------------------------*/
+@keyframes circle1_1 {
+    from{
+        transform: scale(2) translateX(-50px);
+    }
+    to{
+        transform: scale(2) translateX(0px);
+    }
+}
+@keyframes circle1_2 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes circle2_1 {
+    from{
+        transform: scale(2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes circle2_2 {
+    from{
+        transform: scale(0);
+        opacity: 100;
+    }
+    to{
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+div.circle1, div.circle2{
+    border-radius: 50%;
+    background-color: white;
+    margin: 30px auto;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+div.circle1{
+    opacity: 50%;
+    animation: circle1_1 0.5s, circle2_1 0.5s ease-in infinite alternate;
+}
+div.circle2{
+    opacity: 100%;
+    animation: circle1_2 0.5s, circle2_2 0.5s ease-in infinite alternate;
+}
+/*-----------------------------------------end circle---------------------------------*/
+/*-----------------------------------------square------------------------------------*/
+@keyframes square1 {
+    25%{
+        transform: scale(0.5) translateX(100px) rotate(-90deg);
+    }
+    50%{
+        transform: scale(1) translateX(50px) translateY(50px) rotate(-180deg);
+    }
+    75%{
+        transform: scale(0.5) translateY(100px) rotate(-270deg);
+    }
+}
+@keyframes square2 {
+    25%{
+        transform: scale(0.5) translateX(-100px) rotate(-90deg);
+    }
+    50%{
+        transform: scale(1) translateX(-50px) translateY(-50px) rotate(-180deg);
+    }
+    75%{
+        transform: scale(0.5) translateY(-100px) rotate(-270deg);
+    }
+}
+div.square1, div.square2{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+}
+div.square1{
+    top: 400px;
+    left: 400px;
+    animation: square1 2s infinite;
+}
+div.square2{
+    top: 450px;
+    left: 450px;
+    animation: square2 2s infinite;
+}
+/*------------------------------------------end square-------------------------------*/
