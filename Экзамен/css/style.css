@@ -1,0 +1,223 @@
+* {
+  color: black !important;
+  box-sizing: border-box;
+}
+/*-------------------------------- header -------------------------------*/
+.black {
+  height: 35px;
+  width: 100vw;
+  background-color: black;
+}
+.navbar {
+  height: 100px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+}
+.container-fluid {
+  height: 100% !important;
+  margin: 0 8vw!important;
+  padding: 0 !important;
+  width: 80vw;
+}
+/*-------------------------------- A1 --------------------*/
+div.container-fluid > div.logo {
+  background-color: white;
+  margin: 0 !important;
+  height: 170px;
+  width: 100px;
+}
+div.container-fluid > div.logo img {
+  margin: 35px 10px;
+}
+/*-------------------------------- end A1 ----------------*/
+/*-------------------------------- меню ------------------*/
+#navbarSupportedContent {
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+}
+#navbarSupportedContent ul {
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-self: center;
+}
+#navbarSupportedContent ul li {
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#navbarSupportedContent ul li a {
+  height: 100% !important;
+  padding: 35px 24px;
+}
+#navbarSupportedContent ul li a:hover {
+  color: #f83a2c !important;
+  background-color: transparent !important;
+  border-bottom: 4px solid #f83a2c !important;
+}
+#navbarSupportedContent ul li a#not_ul:hover,
+#navbarSupportedContent ul li ul.dropdown-menu > li > a:hover {
+  border-bottom-width: 0 !important;
+}
+#navbarSupportedContent ul li ul {
+  width: 80vw;
+  margin: 0 10vw !important;
+  position: absolute !important;
+}
+#navbarSupportedContent ul li #tariffs {
+  left: -17vw;
+}
+#navbarSupportedContent ul li #shop {
+  left: -39vw;
+}
+#navbarSupportedContent ul li #voka {
+  left: -54vw;
+}
+#navbarSupportedContent ul li #many {
+  left: -68vw;
+}
+.dropdown-menu {
+  display: none;
+}
+li.dropdown:hover > ul.dropdown-menu {
+  display: flex;
+}
+/*-------------------------------- end меню --------------*/
+/*-------------------------------- значки ----------------*/
+div.logotips {
+  display: flex;
+  justify-content: center;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+div.logotips .logo {
+  padding: 0 8px!important;
+  margin: 0 !important;
+}
+div.logotips .logo img {
+  height: 25px;
+  padding: 0;
+  margin: 0;
+}
+div.logotips #search > form {
+  width: 350px;
+  height: 70px;
+  background-color: white;
+  display: none;
+  padding: 15px 20px;
+}
+div.logotips #search > form input {
+  border: 1px solid lightgrey;
+  width: 100%;
+  padding-left: 5px;
+}
+div.logotips #search:active > form,
+div.logotips #search:visited > form {
+  display: flex;
+  position: absolute;
+  left: 65vw;
+  z-index: 10;
+}
+div.logotips #questions > form {
+  display: none;
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid lightgray;
+  color: white !important;
+  padding: 10px;
+}
+div.logotips #questions > form button {
+  margin: 7px;
+  border-radius: 0;
+  color: white !important;
+}
+div.logotips #questions > form .btn-outline-danger {
+  color: #f83a2c !important;
+}
+div.logotips #questions:active > form {
+  display: flex;
+  position: absolute;
+  left: 70vw;
+  flex-direction: column;
+  z-index: 10;
+}
+/*-------------------------------- end значки ------------*/
+/*-------------------------------- end header ----------------------------*/
+/*-------------------------------- wraper -------------------------------*/
+.carousel-item .carousel-caption {
+  text-align: left;
+  padding-top: 10px !important;
+  position: absolute;
+  left: 7vw;
+  top: 50px;
+  padding-right: 450px;
+  margin: 0 !important;
+}
+.carousel-item .carousel-caption h2 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+.carousel-item .carousel-caption p {
+  font-size: x-large;
+}
+.carousel-item .carousel-caption .button {
+  background-color: red;
+  padding: 7px 10px;
+  width: 110px;
+}
+.carousel-item .carousel-caption .button a {
+  color: white !important;
+  text-decoration: none;
+}
+/*-------------------------------- end wraper ---------------------------*/
+/*----------------------------------  phone  ----------------------------*/
+@keyframes up {
+  to {
+    margin-top: 0;
+  }
+}
+div.wraper_mob {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80vw;
+  margin: 2vw 10vw;
+  background-color: #ffffff;
+}
+div.wraper_mob .mob {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin: 15px 10px;
+}
+div.wraper_mob .mob .model {
+  font-size: xx-large;
+  font-weight: bold;
+}
+div.wraper_mob .mob .photo {
+  text-align: center;
+  margin: 5px;
+}
+div.wraper_mob .mob #huawei {
+  margin-top: 50px;
+}
+div.wraper_mob .mob .button {
+  background-color: red;
+  padding: 7px 10px;
+  margin: 10px;
+  width: 300px;
+}
+div.wraper_mob .mob .button a {
+  color: white !important;
+  text-decoration: none;
+}
+div.wraper_mob .mob:hover {
+  animation: up 0.5s forwards;
+}
